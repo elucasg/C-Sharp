@@ -18,9 +18,12 @@ public class ListExample
     // Check if the List contains a specific string
     Console.WriteLine(langs.Contains("C#"));
 
-    // Access the elements of the List using the index
-    Console.WriteLine(langs[1]);
-    Console.WriteLine(langs[2]);
+    // Access the elements of the List using the index. The position is zero-based
+    Console.WriteLine(langs[1]); // Returns C#
+    
+    // IndexOf returns the first index of the specified parameter, or -1 if not found
+    int pos = langs.IndexOf("C"); // returns 2
+   
 
     // Remove elements from the List
     langs.Remove("C#");
